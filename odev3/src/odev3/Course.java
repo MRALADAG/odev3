@@ -5,23 +5,34 @@ public class Course {
 	private String courseName;
 	private int progressionState = 0;
 
-	Course course1;
-	Course course2;
-	Course[] courses;
+	private Course course1;
+	private Course course2;
+	private Course[] courses;
 
 	public Course() {
-		course1 = new Course();
-		course1.setCourseId(1);
-		course1.setCourseName("Yazýlým Geliþtirici Yetiþtirme Kampý (C# + ANGULAR)");
-		course1.progressionState = 89;
 
-		course2 = new Course();
-		course2.setCourseId(2);
-		course2.setCourseName("Programlamaya Giriþ için Temel Kurs");
-		course2.progressionState = 100;
-
-		courses = new Course[] { course1, course2 };
 	}
+
+	public Course(int courseId, String courseName, int progressionState) {
+		this();
+		this.courseId = courseId;
+		this.courseName = courseName;
+		this.progressionState = progressionState;
+	}
+
+//	public Course() {
+//		this.course1 = new Course();
+//		this.course1.setCourseId(1);
+//		this.course1.setCourseName("Yazýlým Geliþtirici Yetiþtirme Kampý (C# + ANGULAR)");
+//		this.course1.progressionState = 89;
+//
+//		this.course2 = new Course();
+//		this.course2.setCourseId(2);
+//		this.course2.setCourseName("Programlamaya Giriþ için Temel Kurs");
+//		this.course2.progressionState = 100;
+//
+//		this.courses = new Course[] { course1, course2 };
+//	}
 
 	public int getCourseId() {
 		return courseId;
