@@ -31,14 +31,14 @@ public class CourseManager {
 	public void enrollCourse(Course course, Student student) {
 		this.user = student;
 		System.out.println(course.getCourseName() + " isimli kursa baþarýyla kayýt oldunuz. "
-				+ student.getStudentFirstName() + " " + student.getStudentLastName());
+				+ student.getUserFirstName() + " " + student.getUserLastName());
 		System.out.println("Ýlerleme Durumu: " + course.getProgressionState());
 	}
 
 	public void disEnrollmentCourse(Course course, Student student) {
 		this.user = student;
 		System.out.println(course.getCourseName() + " isimli kurstan kaydýnýz isteðiniz üzerine silinmiþtir. "
-				+ student.getStudentFirstName() + " " + student.getStudentLastName());
+				+ student.getUserFirstName() + " " + student.getUserLastName());
 	}
 
 	public Course[] getAllCourseList() {

@@ -1,6 +1,8 @@
 package odev3;
 
 public class UserManager {
+	private User userName;
+	
 	public void logIn(String userName) {
 		System.out.println(userName + " isimli kullanýcý sisteme giriþ yaptý.");
 	}

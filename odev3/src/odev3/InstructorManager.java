@@ -23,7 +23,7 @@ public class InstructorManager extends UserManager {
 		}
 		items[items.length - 1] = course;
 
-		System.out.println("Eðitmen " + instructor.getLecturerFirstName() + " " + instructor.getLecturerLastName() + " "
+		System.out.println("Eðitmen " + instructor.getUserFirstName() + " " + instructor.getUserLastName() + " "
 				+ course.getCourseName() + " kursunu ekledi.");
 //		System.out.println("****************************************");
 //		for (Course course2 : items) {
@@ -32,7 +32,7 @@ public class InstructorManager extends UserManager {
 	}
 
 	public void deleteCourse(Course course) {
-		System.out.println("Eðitmen " + instructor.getLecturerFirstName() + " " + instructor.getLecturerLastName() + " "
+		System.out.println("Eðitmen " + instructor.getUserFirstName() + " " + instructor.getUserLastName() + " "
 				+ course.getCourseName() + "isimli kursu baþarýyla sistemden kaldýrdýnýz.");
 	}
 

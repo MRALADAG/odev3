@@ -5,19 +5,12 @@ public class Instructor extends User {
 	private String lecturerFirstName;
 	private String lecturerLastName;
 
-	public String getLecturerFirstName() {
-		return lecturerFirstName;
+	public Instructor() {
+
 	}
 
-	public void setLecturerFirstName(String lecturerFirstName) {
+	public Instructor(String lecturerFirstName, String lecturerLastName) {
 		this.lecturerFirstName = lecturerFirstName;
-	}
-
-	public String getLecturerLastName() {
-		return lecturerLastName;
-	}
-
-	public void setLecturerLastName(String lecturerLastName) {
 		this.lecturerLastName = lecturerLastName;
 	}
 

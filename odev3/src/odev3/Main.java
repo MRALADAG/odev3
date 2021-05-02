@@ -9,8 +9,8 @@ public class Main {
 		course.setCourseName("Yazýlým Geliþtirici Yetiþtirme Kampý (JAVA + REACT)");
 
 		Instructor lecturer = new Instructor();
-		lecturer.setLecturerFirstName("Engin");
-		lecturer.setLecturerLastName("Demiroð");
+		lecturer.setUserFirstName("Engin");
+		lecturer.setUserLastName("Demiroð");
 		lecturer.setUserId(1);
 
 		CourseManager courseManager = new CourseManager(lecturer);
@@ -25,6 +25,13 @@ public class Main {
 		for (Course lesson : instructorManager.getAllLecturerCourse()) {
 			System.out.println(lesson.getCourseName());
 		}
+
+		Student student = new Student("Adem", "Coþkun", 2);
+		StudentManager manager = new StudentManager(student);
+		manager.enrollCourse(instructorManager.getAllLecturerCourse()[2]);
+		System.out.println("-----------------------------------------------------------");
+
+		manager.courseDisenrollment(instructorManager.getAllLecturerCourse()[1]);
 
 	}
 
