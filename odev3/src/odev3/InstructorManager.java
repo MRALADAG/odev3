@@ -5,7 +5,6 @@ public class InstructorManager extends UserManager {
 	private Instructor instructor;
 	private Course[] courses;
 	private Course[] items;
-	private Course item;
 	private CourseManager courseManager;
 
 	public InstructorManager(Instructor instructor) {
@@ -15,7 +14,7 @@ public class InstructorManager extends UserManager {
 	}
 
 	public void addCourse(Course course) {
-		this.item = course;
+
 		Course[] tempArray = courses;
 		items = new Course[courses.length + 1];
 		for (int i = 0; i < tempArray.length; i++) {
