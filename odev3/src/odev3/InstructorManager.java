@@ -10,7 +10,7 @@ public class InstructorManager extends UserManager {
 
 	public InstructorManager(Instructor instructor) {
 		this.instructor = instructor;
-		this.courseManager = new CourseManager(instructor);
+		this.courseManager = new CourseManager();
 		this.courses = courseManager.getAllCourseList();
 	}
 

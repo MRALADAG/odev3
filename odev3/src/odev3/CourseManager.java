@@ -3,16 +3,16 @@ package odev3;
 public class CourseManager {
 
 	private Course[] courses;
-	private Course course1;
-	private Course course2;
-	private Instructor instructor;
 	private User user;
+//	private Course course1;
+//	private Course course2;
 
-	public CourseManager(Instructor instructor) {
-		this.course1 = new Course(1, "Yazýlým Geliþtirici Yetiþtirme Kampý (C# + ANGULAR)", 89);
-		this.course2 = new Course(2, "Programlamaya Giriþ için Temel Kurs", 100);
-		this.courses = new Course[] { course1, course2 };
-		this.instructor = instructor;
+	public CourseManager() {
+//		this.course1 = new Course(1, "Yazýlým Geliþtirici Yetiþtirme Kampý (C# + ANGULAR)", 89);
+//		this.course2 = new Course(2, "Programlamaya Giriþ için Temel Kurs", 100);
+//		this.courses = new Course[] { course1, course2 };
+		this.courses = new Course[] { new Course(1, "Yazýlým Geliþtirici Yetiþtirme Kampý (C# + ANGULAR)", 89),
+				new Course(2, "Programlamaya Giriþ için Temel Kurs", 100) };
 
 //		for (Course course2 : courses) {
 //			System.out.println(course2.getCourseName() + " " + instructor.getLecturerFirstName() + " "

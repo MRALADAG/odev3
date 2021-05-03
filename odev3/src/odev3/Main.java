@@ -14,7 +14,7 @@ public class Main {
 		lecturer.setUserId(1);
 		lecturer.setUserName("EnginDmrg");
 
-		CourseManager courseManager = new CourseManager(lecturer);
+		CourseManager courseManager = new CourseManager();
 
 		InstructorManager instructorManager = new InstructorManager(lecturer);
 		instructorManager.logIn(lecturer);
